@@ -1,5 +1,5 @@
-# This Is Wagner
-Aqui você verá uma playlist pessoal minha em uma página web.
+# O que é?
+This Is Wagner é uma playlist pessoal minha em uma página web.
 Playlist em que as faixas estão separadas por categoria. Essas são, Energy, Chill e Love. Cada categoria representa um sentimento ou situação em que eu escuto as músicas.
 
 # Desenvolvimento da página
@@ -16,5 +16,29 @@ Implementei um meio de navegação prático, pois o usuário não precisa ficar 
 <a id="botaonextlove" class="botaonext" href="#section4">↡</a>
 ```
 Para exibição das fixas e com elas as letras utilizei um modal para cada uma, assim o usuário não precisa sair da página para acessar o conteúdo, praticidade para tornar a experiência confortável. Para o modal foi escrito linhas em Java Script, para mostrar e fechar ele. Para mostrar basta clicar em alguma faixa e o modal irá aparecer. Para fechar tem no canto superior direito bem no vértice da caixa um botão para fechar, ou, clicando em qualquer área fora do modal. Caso a música esteja tocando, ao fecha-lo o iframe reseta e a reprodução é encerrada no mesmo instante.
+```javascript
+function iniciaModal(modalID) {
+    const modal = document.getElementById(modalID);
+    iframe.classList.add('.iframe');
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (event) => {
+        if (event.target.id == modalID || event.target.className == 'fechar') {
+            modal.classList.remove('mostrar');
+        }
+
+    })
+}
+
+const a1 = document.querySelector('.a1');
+a1.addEventListener('click', () => iniciaModal('modal1'));
+
+$('#modal1.modal-container').on('click', function () {
+
+    var video = $(".iframe1").attr("src");
+    $(".iframe1").attr("src", "");
+    $(".iframe1").attr("src", video);
+
+});
+```
 
 No footer no final da página você encontra links pessoais, onde você será redirecionado para meus perfis no Linked In, Git Hub e Instagram.
