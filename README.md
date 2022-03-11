@@ -4,6 +4,8 @@ Baixe o vídeo [neste link](https://drive.google.com/file/d/12uX2jh215VpEFpdoY82
 
 Após download concluído mova o arquivo **video_bg2.mp4** para pasta **videos**.
 
+OBS: Baixe o arquivo completo [neste link](https://drive.google.com/drive/folders/1-24-LS5g-KsK1a1CdVt1DSwyqpnPMUwS?usp=sharing).
+
 
 # O que é?
 This Is Wagner é uma playlist pessoal minha em uma página web.
