@@ -20,58 +20,5 @@ Implementei um meio de navegação prático, pois o usuário não precisa ficar 
 ```
 ## Experiência em uma única página
 Para exibição das fixas e com elas as letras utilizei um modal para cada uma, assim o usuário não precisa sair da página para acessar o conteúdo, praticidade para tornar a experiência confortável. Para o modal foi escrito linhas em Java Script, para mostrar e fechar ele. Para mostrar basta clicar em alguma faixa e o modal irá aparecer. Para fechar tem no canto superior direito bem no vértice da caixa um botão para fechar, ou, clicando em qualquer área fora do modal. Caso a música esteja tocando, ao fecha-lo o iframe reseta e a reprodução é encerrada no mesmo instante.
-### HTML
-```html
-        <a class="a1"> <h2 class="artist">KVSH, Schillist, Ray X Ben</h2>
-            <h2 class="song">BE SOMEONE</h2>
-        <a>
 
-<div id="modal1" class="modal-container">
-        <div id="modalbotao">
-            <button class="fechar">✖</button>
-            <iframe class="iframe1" width="530" height="300" src="https://www.youtube-nocookie.com/embed/aq_gGxMZ6tg"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-        <div class="modal">
-            <div class="lyric">
-                <h1>BE SOMEONE</h1>
-                <h3><span class="white">KVSH, SCHILLIST, RAY X BEN</span> ϟ ENERGY</h3>
-                <div class="linha-modal">
-                    <hr class="linha-de-quebra-2">
-                </div>
-
-                <p class="lyrics">
-                    lyrics
-                </p>
-            </div>
-        </div>
-    </div>
-```
-### JS
-```javascript
-function iniciaModal(modalID) {
-    const modal = document.getElementById(modalID);
-    iframe.classList.add('.iframe');
-    modal.classList.add('mostrar');
-    modal.addEventListener('click', (event) => {
-        if (event.target.id == modalID || event.target.className == 'fechar') {
-            modal.classList.remove('mostrar');
-        }
-
-    })
-}
-
-const a1 = document.querySelector('.a1');
-a1.addEventListener('click', () => iniciaModal('modal1'));
-
-$('#modal1.modal-container').on('click', function () {
-
-    var video = $(".iframe1").attr("src");
-    $(".iframe1").attr("src", "");
-    $(".iframe1").attr("src", video);
-
-});
-```
 No footer no final da página você encontra links pessoais, onde você será redirecionado para meus perfis no Linked In, Git Hub e Instagram.
