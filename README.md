@@ -40,5 +40,28 @@ $('#modal1.modal-container').on('click', function () {
 
 });
 ```
+```html
+<div id="modal1" class="modal-container">
+        <div id="modalbotao">
+            <button class="fechar">✖</button>
+            <iframe class="iframe1" width="530" height="300" src="https://www.youtube-nocookie.com/embed/aq_gGxMZ6tg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="modal">
+            <div class="lyric">
+                <h1>BE SOMEONE</h1>
+                <h3><span class="white">KVSH, SCHILLIST, RAY X BEN</span> ϟ ENERGY</h3>
+                <div class="linha-modal">
+                    <hr class="linha-de-quebra-2">
+                </div>
+
+                <p class="lyrics">
+                    lyrics
+                </p>
+            </div>
+        </div>
+    </div>
 
 No footer no final da página você encontra links pessoais, onde você será redirecionado para meus perfis no Linked In, Git Hub e Instagram.
