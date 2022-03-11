@@ -1,3 +1,8 @@
+!!!IMPORTANTE!!!
+
+Baixe o vídeo no [neste link](https://drive.google.com/file/d/12uX2jh215VpEFpdoY82auP5zeL1gK4LA/view?usp=sharing) para ter experiência completa.
+
+
 # O que é?
 This Is Wagner é uma playlist pessoal minha em uma página web.
 Playlist em que as faixas estão separadas por categoria. Essas são, Energy, Chill e Love. Cada categoria representa um sentimento ou situação em que eu escuto as músicas.
