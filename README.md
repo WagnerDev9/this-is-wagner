@@ -22,6 +22,10 @@ Implementei um meio de navegação prático, pois o usuário não precisa ficar 
 Para exibição das fixas e com elas as letras utilizei um modal para cada uma, assim o usuário não precisa sair da página para acessar o conteúdo, praticidade para tornar a experiência confortável. Para o modal foi escrito linhas em Java Script, para mostrar e fechar ele. Para mostrar basta clicar em alguma faixa e o modal irá aparecer. Para fechar tem no canto superior direito bem no vértice da caixa um botão para fechar, ou, clicando em qualquer área fora do modal. Caso a música esteja tocando, ao fecha-lo o iframe reseta e a reprodução é encerrada no mesmo instante.
 ### HTML
 ```html
+        <a class="a1"> <h2 class="artist">KVSH, Schillist, Ray X Ben</h2>
+            <h2 class="song">BE SOMEONE</h2>
+        <a>
+
 <div id="modal1" class="modal-container">
         <div id="modalbotao">
             <button class="fechar">✖</button>
