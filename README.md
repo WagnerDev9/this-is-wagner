@@ -4,7 +4,7 @@ Playlist em que as faixas estão separadas por categoria. Essas são, Energy, Ch
 
 #Desenvolvimento da página
 Para este projeto elaborei de forma simples e bonita a disposição dos elementos na tela. Todo o tempo nessa página estará sendo reproduzido um vídeo como background, para deixar ele no fundo e fixa-lo utilizei "z-index", para colocar por trás de todos os elementos, veja a seguir:
-```
+```css
 video-bg {
 position: fixed;
 z-index: -1;
