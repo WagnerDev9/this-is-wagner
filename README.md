@@ -2,7 +2,7 @@
 
 Baixe o vídeo [neste link](https://drive.google.com/file/d/12uX2jh215VpEFpdoY82auP5zeL1gK4LA/view?usp=sharing) para ter experiência completa.
 
-Após download concluído mova o arquivo *video_bg2.mp4* para pasta *videos*.
+Após download concluído mova o arquivo **video_bg2.mp4** para pasta **videos**.
 
 
 # O que é?
