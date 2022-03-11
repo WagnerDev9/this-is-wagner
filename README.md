@@ -20,31 +20,6 @@ Implementei um meio de navegação prático, pois o usuário não precisa ficar 
 ```
 ## Experiência em uma única página
 Para exibição das fixas e com elas as letras utilizei um modal para cada uma, assim o usuário não precisa sair da página para acessar o conteúdo, praticidade para tornar a experiência confortável. Para o modal foi escrito linhas em Java Script, para mostrar e fechar ele. Para mostrar basta clicar em alguma faixa e o modal irá aparecer. Para fechar tem no canto superior direito bem no vértice da caixa um botão para fechar, ou, clicando em qualquer área fora do modal. Caso a música esteja tocando, ao fecha-lo o iframe reseta e a reprodução é encerrada no mesmo instante.
-### JS
-```javascript
-function iniciaModal(modalID) {
-    const modal = document.getElementById(modalID);
-    iframe.classList.add('.iframe');
-    modal.classList.add('mostrar');
-    modal.addEventListener('click', (event) => {
-        if (event.target.id == modalID || event.target.className == 'fechar') {
-            modal.classList.remove('mostrar');
-        }
-
-    })
-}
-
-const a1 = document.querySelector('.a1');
-a1.addEventListener('click', () => iniciaModal('modal1'));
-
-$('#modal1.modal-container').on('click', function () {
-
-    var video = $(".iframe1").attr("src");
-    $(".iframe1").attr("src", "");
-    $(".iframe1").attr("src", video);
-
-});
-```
 ### HTML
 ```html
 <div id="modal1" class="modal-container">
@@ -69,5 +44,83 @@ $('#modal1.modal-container').on('click', function () {
             </div>
         </div>
     </div>
+```
+### CSS
+```css
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.modal-container.mostrar {
+    display: flex;
+    animation: modalkey .5s;
+}
+
+.modal {
+    background-color: rgb(0, 0, 0);
+    width: 1250px;
+    height: 600px;
+    padding: 50px;
+    border: 2px solid rgb(200, 255, 0);
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(5, 5, 5, 1);
+    position: fixed;
+    overflow-y: auto;
+    cursor: default;
+    user-select: none;
+    box-shadow: 0px 0px 30px rgba(200, 255, 0, 0.3);
+}
+
+#modalbotao {
+    position: relative;
+    width: 1250px;
+    height: 600px;
+}
+
+@keyframes modalkey {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+```
+### JS
+```javascript
+function iniciaModal(modalID) {
+    const modal = document.getElementById(modalID);
+    iframe.classList.add('.iframe');
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (event) => {
+        if (event.target.id == modalID || event.target.className == 'fechar') {
+            modal.classList.remove('mostrar');
+        }
+
+    })
+}
+
+const a1 = document.querySelector('.a1');
+a1.addEventListener('click', () => iniciaModal('modal1'));
+
+$('#modal1.modal-container').on('click', function () {
+
+    var video = $(".iframe1").attr("src");
+    $(".iframe1").attr("src", "");
+    $(".iframe1").attr("src", video);
+
+});
 ```
 No footer no final da página você encontra links pessoais, onde você será redirecionado para meus perfis no Linked In, Git Hub e Instagram.
