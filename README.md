@@ -49,59 +49,6 @@ Para exibição das fixas e com elas as letras utilizei um modal para cada uma, 
         </div>
     </div>
 ```
-### CSS
-```css
-.modal-container {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 2000;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.modal-container.mostrar {
-    display: flex;
-    animation: modalkey .5s;
-}
-
-.modal {
-    background-color: rgb(0, 0, 0);
-    width: 1250px;
-    height: 600px;
-    padding: 50px;
-    border: 2px solid rgb(200, 255, 0);
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(5, 5, 5, 1);
-    position: fixed;
-    overflow-y: auto;
-    cursor: default;
-    user-select: none;
-    box-shadow: 0px 0px 30px rgba(200, 255, 0, 0.3);
-}
-
-#modalbotao {
-    position: relative;
-    width: 1250px;
-    height: 600px;
-}
-
-@keyframes modalkey {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 60px, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-```
 ### JS
 ```javascript
 function iniciaModal(modalID) {
