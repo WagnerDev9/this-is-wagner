@@ -21,7 +21,7 @@ z-index: -1;
 }
 ```
 ## Navegação por clicks
-Implementei um meio de navegação prático, pois o usuário não precisa ficar rodando o scroll, ele navega nas sessões por botões(next/back), para avançar ou voltar para sessão anterior click por click. Além desse meio o usuário pode também navegar pela navbar que fica no header, nela estão as 3 categorias lado a lado, além disso, o logotipo é um botão que possibilita voltar para o início da página com um click. Para isso usei o "href", referenciando com o id de cada sessão.
+Implementei um meio de navegação prático, pois o usuário não precisa ficar rodando o scroll, ele navega nas sessões por botões(next/back), para avançar ou voltar para as sessões click por click. Além desse meio o usuário pode também navegar pela navbar que fica no header, nela estão as 3 categorias lado a lado, além disso, o logotipo é um botão que possibilita voltar para o início da página com um click. Para isso usei o "href", referenciando com o id de cada sessão.
 ### HTML
 ```html
 <a id="botaobackenergy" class="botaoback" href="#section2">↟</a>
